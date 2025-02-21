@@ -1,0 +1,11 @@
+services:
+  - name: openwebui
+    type: web
+    plan: starter
+    runtime: image
+    image:
+      url: ghcr.io/open-webui/open-webui:main
+    disk:
+      name: openwebui
+      mountPath: /app/backend/data
+      sizeGB: 2
